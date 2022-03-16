@@ -1,0 +1,5 @@
+Maria,34.987
+Joao,87.543
+Rafael,12.765
+José,56.321
+Rafaela,90.876

@@ -16,6 +16,7 @@ import interfaces.ControllerPeople;
 public class listaPeople implements ControllerPeople  {
 
 	private Map<Long, People> map = new HashMap<Long, People>();
+	private static Long id = (long) 0;
 	
 	@Override
 	public void getViewMap() {
@@ -30,8 +31,9 @@ public class listaPeople implements ControllerPeople  {
 	}
 
 	@Override
-	public void addElementByMap(Long key, People people) {
-		this.map.put(key, people);
+	public void addElementByMap(People people) {
+		this.map.put(id, people);
+		id++;
 	}
 
 	@Override
@@ -56,7 +58,7 @@ public class listaPeople implements ControllerPeople  {
                 new LinkedList<Map.Entry<Long, People>>(mapp.entrySet());
         
         
-        System.out.println("\n\nIsso é uma lista convertida de Map: " + list);
+        System.out.println("\n\nIsso é uma lista com Map: " + list);
         System.out.println("\n");
         
 

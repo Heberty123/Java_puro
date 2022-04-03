@@ -1,8 +1,5 @@
 package Controller;
 
-import java.util.Set;
-import java.util.Map.Entry;
-
 import entities.People;
 import interfaces.ControllerPeople;
 
@@ -21,8 +18,8 @@ public class listaPeopleController {
 		this.controle.getViewMap();
 	}
 	
-	public void addElement(Long key, People people){
-		this.controle.addElementByMap(key, people);
+	public void addElement(People people){
+		this.controle.addElementByMap(people);
 	}
 	
 	public void removeByIdFromMap(Long key) {

@@ -11,9 +11,11 @@ public class principal {
 
 		listaPeopleController lista = new listaPeopleController(new listaPeople());
 		
-		lista.addElement(1L, new People("Heberty", 12.780));
-		lista.addElement(2L, new People("Amélia", 42.780));
-		lista.addElement(3L, new People("Donizeti", 22.780));
+		lista.addElement(new People("Heberty", 12.780));
+		lista.addElement(new People("Amélia", 42.780));
+		lista.addElement(new People("Donizeti", 22.780));
+		lista.addElement(new People("Maria", 25.780));
+		lista.addElement(new People("Pedro", 46.780));
 		
 		lista.getViewAllMap();
 		lista.order();
